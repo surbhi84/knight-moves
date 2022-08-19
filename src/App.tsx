@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="flex flex-col justify-center">
+      <header className=" flex gap-1 items-center text-2xl sm:text-3xl font-semibold p-2 px-10">
+        <img src="/knight.svg" alt="logo" className="h-6 sm:h-10" />
+
+        <h1>
+          <span className="  text-teal-500">Knight</span> Moves
+        </h1>
       </header>
+      <main>
+        <p className="text-xl ">
+          Hey, select any postion and we'll highlight all the possible moves for
+          you 🤙
+        </p>
+      </main>
     </div>
   );
-}
+};
 
 export default App;
