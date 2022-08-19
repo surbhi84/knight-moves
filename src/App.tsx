@@ -10,8 +10,8 @@ const App = () => {
           <span className="  text-teal-500">Knight</span> Moves
         </h1>
       </header>
-      <main className="flex flex-col items-center p-10">
-        <p className="text-xl pt-10 pb-5">
+      <main className="flex flex-col items-center p-5">
+        <p className="text-xl pb-5">
           Hey, select any position and we'll highlight all the possible moves
           for you 🤙
         </p>

@@ -32,6 +32,15 @@ export const ChessboardComponent = () => {
   return (
     <div className=" sm:w-[80%] bg-slate-200 rounded-xl flex justify-center py-10">
       <Chessboard
+        calcWidth={({
+          screenWidth,
+          screenHeight,
+        }: {
+          screenWidth: number;
+          screenHeight: number;
+        }) =>
+          screenWidth > screenHeight ? screenHeight * 0.6 : screenWidth * 0.8
+        }
         darkSquareStyle={{ backgroundColor: "black" }}
         lightSquareStyle={{ backgroundColor: "white" }}
         position={{ [currentPosition]: "wN" }}
