@@ -19,4 +19,12 @@ const knightMoves = (position: [number, number]) =>
     ? allPossibleLocation(position).filter(isLegalPosition)
     : [];
 
+export const convertPosition = (pos: string): [number, number] => [
+  pos.charCodeAt(0) - 97,
+  Number(pos[1]) - 1,
+];
+
+export const convertPositionBack = (pos: [number, number]): string =>
+  `${String.fromCharCode(pos[0] + 97)}${pos[1] + 1}`;
+
 export default knightMoves;
